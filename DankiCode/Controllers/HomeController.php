@@ -2,13 +2,16 @@
 
     namespace DankiCode\Controllers;
 
-    class HomeController
-    {
+    class HomeController{
 
         public function index(){
-
-            echo 'Estou na home!';
-
+            if(isset($_SESSION['login'])){
+                //Rederiza a home do usuario.
+                \DankiCode\Views\MainView::render('home');
+            }else{
+                //Rederiza para Criar conta.
+                \DankiCode\Views\MainView::render('login');
+            }
         }
     }
 

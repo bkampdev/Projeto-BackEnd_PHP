@@ -21,7 +21,7 @@
             font-family:"Montserrat" ;
             text-shadow: 2px 2px #337667;
         }
-        .center {
+        .center{
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -30,7 +30,7 @@
     </style>
 </head>
 <body>
-    <img class="center" src="https://i.imgur.com/dVovjAm.png">
+    <img class="center" src="<?php echo INCLUDE_PATH_STATIC ?>images/404.png">
     <h2>Ops... A pagina não existe!</h2>
 </body>
 </html>
